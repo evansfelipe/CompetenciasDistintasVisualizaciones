@@ -1,0 +1,223 @@
+// Relaciones
+digraph G {
+	graph [rankdir=LR]
+	subgraph clusterActividadReservada {
+		color=lightgrey style=filled
+		label="Actividad Reservada"
+		node [color=w shape=rectangle style=filled]
+		A1 [label="Especificar, proyectar y desarrollar sistemas de información, sistemas de comunicación de datos y software cuya utilización pueda afectar la seguridad, salud, bienes o derechos."]
+		A2 [label="Proyectar y dirigir lo referido a seguridad informática"]
+		A3 [label="Establecer métricas y normas de calidad de software"]
+		A4 [label="Certificar el funcionamiento, condición de uso o estado de lo mencionado anteriormente."]
+		A5 [label="Dirigir y controlar la implementación, operación y mantenimiento de lo anteriormente mencionado"]
+	}
+	subgraph clusterCompeteciaEspecifica {
+		color=blue
+		label="Competencia Especificas"
+		E1 [label="Especificar, proyectar y desarrollar sistemas de información"]
+		E2 [label="Especificar, proyectar y desarrollar sistemas de comunicación de datos."]
+		E3 [label="Especificar, proyectar y desarrollar software."]
+		E4 [label="Proyectar y dirigir lo referido a seguridad informática."]
+		E5 [label="Establecer métricas y normas de calidad de software."]
+		E6 [label="Certificar el funcionamiento, condición de uso o estado de sistemas de información, sistemas de comunicación de datos, software, seguridad informática y calidad de software."]
+		E7 [label="Dirigir y controlar la implementación, operación y mantenimiento de sistemas de información, sistemas de
+comunicación de datos, software, seguridad informática y calidad de software."]
+	}
+	subgraph clusterCONFEDISubCapacidades {
+		color=red
+		label="CONFEDI SubCapacidades"
+		"sC1.a.1" [label="Ser capaz de identificar una situación presente o futura como problemática."]
+		"sC1.a.2" [label="Ser capaz  de identificar  y organizar los datos  pertinentes  al problema."]
+		"sC1.a.3" [label="Ser capaz  de evaluar  el contexto  particular  del problema e incluirlo en el análisis."]
+		"sC1.a.4" [label="Ser capaz  de delimitar  el problema y formularlo de manera clara y precisa."]
+		"sC1.b.1" [label="Ser capaz  de generar  diversas alternativas  de solución a un problema ya formulado."]
+		"sC1.b.2" [label="Ser capaz de desarrollar criterios profesionales para la evaluación de las alternativas y seleccionar la más adecuada en un contexto particular."]
+		"sC1.b.3" [label="Ser capaz de valorar el impacto sobre el medio ambiente y la sociedad, de las diversas alternativas de solución."]
+		"sC1.c.1" [label="Ser capaz  de realizar  el diseño  de la solución  tecnológica, incluyendo el modelado."]
+		"sC1.c.2" [label="Ser capaz de incorporar  al diseño las dimensiones del problema (tecnológica, temporal, económica, financiera, medioambiental, social, etc.) que sean relevantes en su contexto específico."]
+		"sC1.c.3" [label="Ser capaz de planificar la resolución (identificar el momento oportuno  para el abordaje,  estimar  los  tiempos  requeridos, prever las ayudas necesarias, etc.)."]
+		"sC1.c.4" [label="Ser capaz de optimizar la selección y uso de los materiales y/o dispositivos tecnológicos disponibles para la implementación."]
+		"sC1.c.5" [label="Ser capaz  de elaborar informes,  planos,  especificaciones  y comunicar recomendaciones."]
+		"sC1.c.6" [label="Ser capaz de controlar el proceso de ejecución"]
+		"sC1.d.1" [label="Ser capaz  de controlar  el propio desempeño  y saber  cómo encontrar los recursos necesarios para superar dificultades."]
+		"sC1.d.2" [label="Ser capaz de establecer supuestos, de usar técnicas eficaces de resolución y de estimar errores."]
+		"sC1.d.3" [label="Ser capaz  de monitorear,  evaluar y ajustar  el proceso  de resolución del problema."]
+		"sC1.d.4" [label="Ser capaz de usar lo que ya se conoce"]
+		"sC2.a.1" [label="Ser capaz de relevar las necesidades y traducirlas a entes mensurables."]
+		"sC2.a.2" [label="Ser capaz de seleccionar las tecnologías apropiadas."]
+		"sC2.a.3" [label="Ser capaz de generar alternativas de solución."]
+		"sC2.a.4" [label="Ser capaz de desarrollar criterios profesionales para la evaluación de las alternativas y seleccionar las más adecuadas en un contexto particular."]
+		"sC2.a.5" [label="Ser capaz de documentar y comunicar de manera efectiva las soluciones seleccionadas."]
+		"sC2.b.1" [label="Ser capaz de definir los alcances de un proyecto."]
+		"sC2.b.2" [label="Ser capaz de especificar las características técnicas del objeto del proyecto, de acuerdo a las normas correspondientes."]
+		"sC2.b.3" [label="Ser capaz de seleccionar, especificar y usar los enfoques, técnicas, herramientas y procesos de diseño adecuados al proyecto, sus metas, requerimientos y restricciones."]
+		"sC2.b.4" [label="Ser capaz de modelar el objeto del proyecto, para su análisis (simulación, modelos físicos, prototipos, ensayos, etc.)."]
+		"sC2.b.5" [label="Ser capaz de evaluar y optimizar el diseño."]
+		"sC2.b.6" [label="Ser capaz de elaborar una planificación de los objetivos para la concreción del diseño, evaluando los riesgos."]
+		"sC2.b.7" [label="Ser capaz de dimensionar y programar los requerimientos de recursos."]
+		"sC2.b.8" [label="Ser capaz de evaluar los aspectos económico-financieros y el impacto económico, social y ambiental del proyecto."]
+		"sC2.b.9" [label="Ser capaz de documentar el proyecto y comunicarlo de manera efectiva."]
+		"sC3.a.1" [label="Ser capaz de identificar y conseguir o desarrollar los recursos necesarios para el proyecto."]
+		"sC3.a.2" [label="Ser capaz  de planificar las  distintas  etapas manejando  en el tiempo  los objetivos,  metodologías  y recursos  involucrados para cumplir con lo planeado."]
+		"sC3.a.3" [label="Ser capaz de programar con suficiente detalle los tiempos de ejecución de las obras, en concordancia con un plan de inversiones."]
+		"sC3.a.4" [label="Ser capaz de ejecutar las distintas etapas de un proyecto de acuerdo con los objetivos, metodologías y recursos involucrados para cumplir con lo planeado asignando recursos y responsables."]
+		"sC3.a.5" [label="Ser capaz de administrar en el tiempo los recursos humanos, físicos, económicos y tecnológicos para el cumplimiento de lo planeado."]
+		"sC3.a.6" [label="Ser capaz de solucionar los problemas que se presentan  durante la ejecución."]
+		"sC3.a.7" [label="Ser capaz de comunicar los avances y el informe final de proyectos de ingeniería."]
+		"sC3.b.1" [label="Ser capaz de operar, inspeccionar y evaluar la marcha de proyectos de ingeniería verificando el cumplimiento de objetivos y metas."]
+		"sC3.b.2" [label="Ser capaz de detectar desvíos en el cumplimiento de las normas técnicas, de seguridad e higiene, de calidad, etc., y de producir los ajustes necesarios."]
+		"sC3.b.3" [label="Ser capaz de identificar la necesidad y oportunidad de introducir cambios en la programación."]
+		"sC3.b.4" [label="Ser capaz de tomar decisiones por alteraciones o fallas en proyectos de ingeniería."]
+		"sC3.b.5" [label="Ser capaz de controlar la adecuación de los cambios y alternativas surgidos al proyecto original."]
+		"sC4.a.1" [label="Ser capaz de acceder a las fuentes de información relativas a las técnicas y herramientas y de comprender las especificaciones de las mismas."]
+		"sC4.a.2" [label="Ser capaz de conocer los alcances y limitaciones de las técnicas y herramientas a utilizar y de reconocer los campos de aplicación de cada una de ellas y de aprovechar toda la potencialidad que ofrecen."]
+		"sC4.a.3" [label="Ser capaz  de seleccionar fundamentadamente las técnicas y herramientas más adecuadas, analizando la relación costo/beneficio de cada alternativa mediante criterios de evaluación de costos, tiempo, precisión, disponibilidad, seguridad, etc."]
+		"sC4.b.1" [label="Ser capaz de utilizar las técnicas y herramientas de acuerdo con estándares  y normas de calidad,  seguridad,  medioambiente, etc."]
+		"sC4.b.2" [label="Ser capaz de interpretar los resultados que se obtengan de la aplicación de las diferentes técnicas y herramientas utilizadas."]
+		"sC4.b.3" [label="Ser capaz de combinarlas y/o producir modificaciones de manera que optimicen su utilización."]
+		"sC4.b.4" [label="Ser capaz de capacitar y entrenar en la utilización de las técnicas y herramientas."]
+		"sC4.b.5" [label="Ser capaz de supervisar la utilización de las técnicas y herramientas y de detectar y corregir desvíos en la utilización de las mismas."]
+		"sC5.a.1" [label="Ser capaz de detectar necesidades actuales o potenciales, que requieran de una solución tecnológica, y relacionarlas con la tecnología disponible o a ser desarrollada."]
+		"sC5.a.2" [label="Ser capaz de percibir las situaciones contextuales como oportunidades de innovación tecnológica."]
+		"sC5.a.3" [label="Ser capaz de convertir una necesidad detectada en la definición de un problema tecnológico cuya solución la satisface."]
+		"sC5.b.1" [label="  Ser capaz  de identificar  los recursos tecnológicos  necesarios para resolver el problema."]
+		"sC5.b.2" [label="Ser capaz de realizar una búsqueda apropiada de información para conocer el estado del arte de la problemática considerada."]
+		"sC5.b.3" [label="Ser capaz de identificar las tecnologías emergentes y evaluar su posible impacto sobre los procesos actuales."]
+		"sC5.b.4" [label="Ser capaz de aplicar los avances de la tecnología en general, y de su especialidad en particular."]
+		"sC5.b.5" [label="Ser capaz de encontrar nuevas aplicaciones para las tecnologías disponibles."]
+		"sC5.c.1" [label="Ser capaz de pensar en forma sistémica (visualizar como un sistema los elementos constitutivos de una situación o fenómeno, comprendiendo la dinámica de sus interacciones)."]
+		"sC5.c.2" [label="Ser capaz de pensar en forma  crítica (pensar por cuenta propia, analizando y evaluando la consistencia de las propias ideas, de lo que se lee, de lo que se escucha, de lo que se observa)."]
+		"sC5.c.3" [label="Ser capaz de pensar de manera creativa (generar nuevas ideas y/o nuevas maneras de enfocar o abordar lo ya conocido)."]
+		"sC6.a.1" [label="Ser capaz de asumir como propios los objetivos del grupo y actuar para alcanzarlos."]
+		"sC6.a.2" [label="Ser capaz de proponer y/o desarrollar metodologías de trabajo acordes a los objetivos a alcanzar."]
+		"sC6.a.3" [label="Ser capaz de respetar los compromisos (tareas y plazos) contraídos con el grupo y mantener la confidencialidad."]
+		"sC6.b.1" [label="Ser capaz de escuchar y aceptar la existencia y validez de distintos puntos de vista."]
+		"sC6.b.2" [label="Ser capaz de expresarse con claridad y de socializar las ideas dentro de un equipo de trabajo."]
+		"sC6.b.3" [label="Ser capaz de analizar las diferencias y proponer alternativas de resolución, identificando áreas de acuerdo y desacuerdo, y de negociar para alcanzar consensos."]
+		"sC6.b.4" [label="Ser capaz de comprender la dinámica del debate, efectuar intervenciones y tomar decisiones  que integren distintas opiniones, perspectivas y puntos de vista."]
+		"sC6.b.5" [label="Ser capaz de interactuar en grupos heterogéneos, apreciando y respetando la diversidad de valores,  creencias y culturas  de todos sus integrantes."]
+		"sC6.b.6" [label="Ser capaz de hacer un abordaje  interdisciplinario, integrando las perspectivas de las diversas formaciones disciplinares de los miembros del grupo."]
+		"sC6.c.1" [label="Ser capaz  de aceptar  y desempeñar distintos  roles, según lo requiera la tarea, la etapa del proceso y la conformación del equipo."]
+		"sC6.c.2" [label="Ser capaz de promover  una actitud participativa y colaborativa entre los integrantes del equipo."]
+		"sC6.c.3" [label="Ser capaz de reconocer  y aprovechar las fortalezas del equipo y de sus integrantes y de minimizar y compensar sus debilidades."]
+		"sC6.c.4" [label="Ser capaz de realizar una evaluación del funcionamiento y la producción del equipo."]
+		"sC6.c.5" [label="Ser capaz de representar al equipo, delegar tareas y resolver conflictos y problemas de funcionamiento grupal."]
+		"sC6.c.6" [label="Ser capaz de asumir el rol de conducción de un equipo."]
+		"sC7.a.1" [label="Ser capaz de adaptar las estrategias de comunicación  a los objetivos comunicacionales, a las características de los destinatarios y a cada situación."]
+		"sC7.a.2" [label="Ser capaz de comunicar eficazmente problemáticas relacionadas a la profesión, a personas ajenas a ella."]
+		"sC7.a.3" [label="Ser capaz  de interpretar  otros  puntos  de vista,  teniendo  en cuenta las situaciones personales y sociales de los interlocutores."]
+		"sC7.a.4" [label="Ser capaz de identificar coincidencias y discrepancias, y de producir síntesis y acuerdos."]
+		"sC7.a.5" [label="Ser capaz de usar eficazmente  las  herramientas tecnológicas apropiadas para la comunicación"]
+		"sC7.b.1" [label="Ser capaz  de expresarse  de manera  concisa, clara y precisa, tanto en forma oral como escrita."]
+		"sC7.b.2" [label="Ser capaz de identificar el tema central y los puntos claves del informe o presentación a realizar."]
+		"sC7.b.3" [label="Ser capaz de producir textos técnicos (descriptivos, argumentativos y explicativos), rigurosos y convincentes."]
+		"sC7.b.4" [label="Ser capaz de utilizar y articular de manera eficaz distintos lenguajes (formal, gráfico y natural)."]
+		"sC7.b.5" [label="Ser capaz de manejar las herramientas informáticas apropiadas para la elaboración de informes y presentaciones."]
+		"sC7.b.6" [label="Ser capaz de comprender  textos técnicos en idioma inglés."]
+		"sC7.b.7" [label="Ser capaz de identificar las ideas centrales de un informe que se leyó o de una presentación a la cual se asistió."]
+		"sC7.b.8" [label="Ser capaz  de analizar la validez y la coherencia de la información."]
+		"sC8.a.1" [label="Ser capaz de comprender la responsabilidad ética de sus funciones."]
+		"sC8.a.2" [label="Ser capaz de identificar las connotaciones éticas de diferentes decisiones en el desempeño profesional."]
+		"sC8.a.3" [label="Ser capaz  de comportarse  con honestidad e integridad  personal."]
+		"sC8.a.4" [label="Ser capaz de respetar la confidencialidad de sus actividades."]
+		"sC8.a.5" [label="Ser capaz de reconocer  la necesidad de convocar a otros profesionales o expertos cuando los problemas  superen sus conocimientos o experiencia."]
+		"sC8.b.1" [label="Ser capaz de comprender y asumir los roles de la profesión."]
+		"sC8.b.2" [label="Ser capaz de considerar los requisitos de calidad y seguridad en todo momento."]
+		"sC8.b.3" [label="Ser capaz de aplicar las regulaciones previstas para el ejercicio profesional."]
+		"sC8.b.4" [label="Ser capaz de comprender  y asumir las responsabilidades de los ingenieros en la sociedad."]
+		"sC8.b.5" [label="Ser capaz de poner en juego una visión geopolítica actualizada para encarar la  elaboración de  soluciones, proyectos y decisiones."]
+		"sC8.b.6" [label="Ser  capaz  de anteponer  los  intereses  de la sociedad  en su conjunto, a intereses personales, sectoriales, comerciales o profesionales, en el ejercicio de la profesión."]
+		"sC8.c.1" [label="Ser capaz de reconocer que la optimización de la selección de alternativas para los proyectos, acciones y decisiones, implica la ponderación de impactos de diverso tipo, cuyos respectivos efectos pueden ser contradictorios entre sí."]
+		"sC8.c.2" [label="Ser capaz de considerar  y estimar el impacto económico, social y ambiental  de proyectos,  acciones y decisiones,  en el contexto local y global"]
+		"sC9.a.1" [label=" Ser capaz de asumir que se trabaja en un campo en permanente evolución, donde las herramientas, técnicas y recursos propios de la profesión están sujetos al cambio, lo que requiere un continuo aprendizaje y capacitación."]
+		"sC9.a.2" [label="Ser capaz de asumir que la formación y capacitación continuas son una inversión."]
+		"sC9.a.3" [label="Ser capaz de desarrollar el hábito de la actualización permanente."]
+		"sC9.b.1" [label="Ser capaz de desarrollar una estrategia personal de formación, aplicable desde la carrera de grado en adelante."]
+		"sC9.b.2" [label="Ser capaz de evaluar el propio desempeño profesional y encontrar los recursos necesarios para mejorarlo."]
+		"sC9.b.3" [label="Ser capaz de evaluar el propio aprendizaje y encontrar los recursos necesarios para mejorarlo."]
+		"sC9.b.4" [label="Ser capaz de detectar aquellas áreas del conocimiento propias de la profesión y/o actividad profesional en las que se requiera actualizar o profundizar conocimientos."]
+		"sC9.b.5" [label="Ser capaz de explorar aquellas áreas del conocimiento no específicas de la profesión que podrían contribuir al mejor desempeño profesional."]
+		"sC9.b.6" [label="Ser capaz de hacer una búsqueda bibliográfica  por medios diversos  (bibliotecas,  librerías,  Internet,  centros  de documentación, etc.), de seleccionar el material relevante (que sea a la vez válido y actualizado) y de hacer una lectura comprensiva y crítica del mismo."]
+		"sC10.a.1" [label="Ser capaz de detectar oportunidades, crear escenarios de posibilidades y delinear una visión de futuro."]
+		"sC10.a.2" [label="Ser capaz de autoevaluarse identificando fortalezas, debilidades y potencialidades."]
+		"sC10.a.3" [label="Ser capaz de plasmar la visión en un proyecto."]
+		"sC10.a.4" [label="Ser capaz de elaborar un plan de negocios viable."]
+		"sC10.a.5" [label="Ser capaz de identificar y conseguir o desarrollar los recursos necesarios."]
+		"sC10.a.6" [label="Ser capaz de identificar, evaluar y asumir riesgos."]
+		"sC10.a.7" [label="Ser capaz de actuar proactivamente."]
+		"sC10.a.8" [label="Ser capaz  de tomar  decisiones  con información parcial, en contextos de incertidumbre y ambigüedad."]
+		"sC10.b.1" [label="Ser capaz de identificar relaciones claves  para alcanzar objetivos."]
+		"sC10.b.2" [label="Ser capaz de relacionarse con otros grupos o personas que realicen actividades que puedan contribuir a nuevos desarrollos o a alcanzar los objetivos buscados."]
+		"sC10.b.3" [label="Ser capaz de crear y fortalecer relaciones de confianza y cooperación."]
+		"sC10.b.4" [label="Ser capaz de contribuir a los objetivos de las redes en las que participa generando intercambios sinérgicos."]
+	}
+	A1 -> E1
+	A1 -> E2
+	A1 -> E3
+	A2 -> E4
+	A3 -> E5
+	A4 -> E6
+	A5 -> E7
+	E2 -> "sC1.a.1"
+	E2 -> "sC1.a.2"
+	E2 -> "sC1.a.3"
+	E2 -> "sC1.a.4"
+	E2 -> "sC1.b.2"
+	E2 -> "sC1.b.3"
+	E2 -> "sC2.a.1"
+	E2 -> "sC2.a.2"
+	E2 -> "sC2.a.3"
+	E2 -> "sC2.a.4"
+	E2 -> "sC2.a.5"
+	E2 -> "sC2.b.1"
+	E2 -> "sC2.b.2"
+	E2 -> "sC2.b.3"
+	E2 -> "sC2.b.4"
+	E2 -> "sC2.b.5"
+	E2 -> "sC2.b.6"
+	E2 -> "sC2.b.7"
+	E2 -> "sC2.b.8"
+	E2 -> "sC2.b.9"
+	E2 -> "sC4.a.1"
+	E2 -> "sC4.a.2"
+	E2 -> "sC4.a.3"
+	E2 -> "sC4.b.1"
+	E2 -> "sC4.b.2"
+	E2 -> "sC4.b.3"
+	E2 -> "sC5.a.1"
+	E2 -> "sC5.a.2"
+	E2 -> "sC5.a.3"
+	E2 -> "sC5.b.1"
+	E2 -> "sC5.b.2"
+	E2 -> "sC5.b.3"
+	E2 -> "sC5.b.4"
+	E2 -> "sC5.b.5"
+	E2 -> "sC7.a.1"
+	E2 -> "sC7.a.1"
+	E2 -> "sC7.a.1"
+	E2 -> "sC7.b.1"
+	E2 -> "sC7.b.2"
+	E2 -> "sC7.b.3"
+	E2 -> "sC7.b.4"
+	E2 -> "sC7.b.5"
+	E2 -> "sC7.b.6"
+	E2 -> "sC7.b.7"
+	E2 -> "sC7.b.8"
+	E2 -> "sC8.a.1"
+	E2 -> "sC8.a.2"
+	E2 -> "sC8.a.3"
+	E2 -> "sC8.a.4"
+	E2 -> "sC8.a.5"
+	E2 -> "sC8.b.1"
+	E2 -> "sC8.b.4"
+	E2 -> "sC8.b.5"
+	E2 -> "sC8.b.6"
+	E2 -> "sC10.a.1"
+	E2 -> "sC10.a.2"
+	E2 -> "sC10.a.3"
+	E2 -> "sC10.a.4"
+	E2 -> "sC10.a.5"
+	E2 -> "sC10.a.6"
+	E2 -> "sC10.a.7"
+	E2 -> "sC10.a.8"
+}
